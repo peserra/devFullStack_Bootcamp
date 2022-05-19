@@ -1,0 +1,31 @@
+#title, .subtitle, .post-title
+{
+    color:darkslategray;
+}
+
+.post-title
+{
+    font-size: 16px;
+    font-style: italic;
+}
+.imagem-batata
+{
+    height: 200px;
+    width: 200px;
+    border-radius: 12.5%;
+
+}
+
+body
+{
+    background-color: grey; /*Muda a cor do background todo do site*/
+    margin: auto;
+}
+
+.post
+{
+    background-color: wheat; /*Muda a cor do background apenas da seção post*/
+    padding: 5px; /*acrescenta 5 px de padding na seção*/
+    border: 3px solid black; /*coloca uma borda solida preta de 3 px de expessura*/
+    margin: 10px; /*adiciona borda em volta da caixa*/
+}

@@ -1,0 +1,32 @@
+.navbar
+{
+    background-color: goldenrod;
+}
+
+.quem-somos
+{
+    background-color: grey;
+    color: white;
+        
+}
+
+.margin
+{
+    padding-top: 50px;
+    padding-bottom: 15px;
+}
+
+.paragrafo-quem-somos
+{
+    font-style: italic;
+   
+}
+.parceiros
+{
+    background-color: lightslategray;
+}
+.bg-footer
+{
+    background-color: darkgray;
+    color: white;
+}
