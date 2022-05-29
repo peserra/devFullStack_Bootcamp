@@ -1,0 +1,27 @@
+/*Arquivo que cuidará da responsividade, aplicando diferentes
+estilos, a depender do tamanho da tela*/
+
+/*controla o menu pra ele nao apertar */
+@media screen and (max-width:700px) /*até 700px, aplique essa formatação:*/
+{
+    header .container
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .botao
+    {
+        margin-top: 5px;
+        width: 200px;
+        
+    }
+}
+
+@media screen and (min-width: 1000px)/*Quando for maior que 1000px, aplique essa formatação:*/
+{
+    .descricao
+    {
+        width: 50%;
+    }
+}

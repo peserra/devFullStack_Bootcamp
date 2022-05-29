@@ -1,0 +1,122 @@
+/*declaração de variáveis na raiz do documento*/
+:root
+{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+* /*indica uma configuração para todo o documento*/
+{
+    /*independente do navegador, essa será a config inicial (padronização)*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*não deixa elementos ultrapassarem borda da caixa*/
+}
+/*ELEMENTOS BASE*/
+body
+{
+    background-color: var(--preta); /*como usar a variável*/
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+header .container
+{
+    display: flex; /*faz a gente usar a flex-box(maneira de alinhar os elementos em tela)*/
+    flex-direction: row; /*ja é assim por padrao, só coloquei pra lembrar*/
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo
+{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    
+}
+
+header nav a
+{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover /*determina uma ação quando o mouse passar por cima do elemento*/
+{
+    color: #fff;
+}
+
+/*FILME EM DESTAQUE*/
+
+.filme-principal
+{
+    font-size: 16px;    
+    background-size: cover;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column; /*organiza em coluna*/
+    justify-content: center; /*sempre justifica na orientação determinada na direção*/
+    align-items: flex-start; /*Elementos sempre começam da esquerda*/
+}
+
+.filme-principal .descricao
+{
+    margin-top: 10px;
+    margin-bottom: 90px;
+    
+}
+
+.filme-principal .titulo
+{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao
+{
+    background-color:rgba(0,0,0,.5); /*r,g,b, alpha(transparencia)*/
+    border: none;
+    color: white;
+    padding: 15px 30px; /*cima-baixo esquerda-direita*/
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer; /*muda o cursor, ajuda a identificar o botao*/
+    transition: .3s ease all; /*controla os efeitos de transicao, pra nao acontecer automático*/
+}
+
+/*muda a cor do botao quando mouse em cima*/
+.botao:hover
+{
+    background-color: white;
+    color: #141414;
+}
+
+/*muda a tag i dentro da classe botao*/
+.botao i
+{
+    margin-right: 10px;
+}
+
+.filme-principal .container
+{
+    margin-left: 10px;
+    width: 75%;
+}
+
+/*CARROSSEL DE FILMES*/
+
+.box-filme
+{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.carrossel-filmes
+{
+    margin-top: 5px;
+}

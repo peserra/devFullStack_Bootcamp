@@ -1,0 +1,1 @@
+Criando um clone do site da Netflix para agregar conhecimento na área de FrontEnd
